@@ -1,0 +1,48 @@
+{
+  "flights": [
+    {
+      "id": "1",
+      "title": "Уикенд в романтичном Париже",
+      "country": "Франция",
+      "type": "Город",
+      "duration": 3,
+      "price": 145,
+      "rating": 4.8,
+      "image": "https://www.magnific.com/ru/free-photo/paris-city-rooftop-view-with-eiffel-tower-sunset_29453267.htm#fromView=search&page=1&position=6&uuid=480438b7-51ab-4786-8a38-225e2ca9273e&query=%D0%A4%D1%80%D0%B0%D0%BD%D1%86%D0%B8%D1%8F",
+      "description": "Прогулки у Эйфелевой башни, круассаны на завтрак и посещение Лувра."
+    },
+    {
+      "id": "2",
+      "title": "Солнечный отдых на Мальдивах",
+      "country": "Мальдивы",
+      "type": "Пляж",
+      "duration": 7,
+      "price": 1200,
+      "rating": 4.9,
+      "image": "https://www.magnific.com/ru/free-photo/beautiful-water-villas-tropical-maldives-island_1129687.htm#fromView=search&page=1&position=5&uuid=59e76f5b-1ce6-4dda-a4b1-58746a80e17d&query=%D0%9C%D0%B0%D0%BB%D1%8C%D0%B4%D0%B8%D0%B2%D1%8B",
+      "description": "Белоснежный песок, кристально чистая вода и проживание в вилле на воде."
+    },
+    {
+      "id": "3",
+      "title": "Древние тайны Рима",
+      "country": "Италия",
+      "type": "Культура",
+      "duration": 5,
+      "price": 185,
+      "rating": 4.6,
+      "image": "https://www.magnific.com/ru/free-photo/body-water-buildings_13069893.htm#fromView=search&page=1&position=6&uuid=b64b5e26-357c-421d-8b3b-cc5171a54a74&query=%D0%98%D1%82%D0%B0%D0%BB%D0%B8%D1%8F",
+      "description": "Экскурсии в Колизей и Ватикан, дегустация настоящей итальянской пиццы."
+    },
+    {
+      "id": "4",
+      "title": "Релакс на пляжах Пхукета",
+      "country": "Таиланд",
+      "type": "Пляж",
+      "duration": 10,
+      "price": 650,
+      "rating": 4.7,
+      "image": "https://www.magnific.com/ru/free-photo/island-travel-destinations-idyllic-relaxation-summer_1065076.htm#fromView=search&page=1&position=10&uuid=a3c247cc-8923-467d-aa93-ceddc1b11bd8&query=%D0%A2%D0%B0%D0%B8%D0%BB%D0%B0%D0%BD%D0%B4",
+      "description": "Тропическая природа, вечерние рынки еды и отдых у океана."
+    }
+  ]
+}
