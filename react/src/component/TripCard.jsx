@@ -15,7 +15,7 @@ export default function TripCard({ item }) {
       />
       <div>
         <h3 className="font-bold text-gray-800 text-base">{item.title}</h3>
-        <p className="text-gray-500 text-sm mt-1">{item.price} $</p>
+        <p className="text-gray-500 text-sm mt-1">{item.price} p.</p>
       </div>
 
       <button
