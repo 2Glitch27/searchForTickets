@@ -14,7 +14,7 @@ export default function Main({ items, searchQuery }) {
   return (
     <main className="max-w-6xl mx-auto px-5 py-8">
       
-      <div className="flex justify-end mb-6 bg-gray-50 p-3 rounded border border-gray-200">
+      <div className="flex justify-end mb-6  p-3  border-gray-200">
         <div className="w-full sm:w-48">
           <select
             value={activeType}
