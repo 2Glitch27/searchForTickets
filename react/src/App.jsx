@@ -33,7 +33,7 @@ function App() {
     <>
       <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       {isLoading && (
-        <div className="text-center py-20 text-gray-500 text-lg animate-pulse">
+        <div className="text-center py-20 text-gray-500 text-lg">
           Заргузка...
         </div>
       )}
