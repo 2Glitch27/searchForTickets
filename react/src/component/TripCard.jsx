@@ -20,11 +20,7 @@ export default function TripCard({ item }) {
 
       <button
         onClick={() => toggleFavorite(item.id)} 
-        className={`w-full py-2 rounded text-sm font-medium transition-colors ${
-          favorited 
-            ? 'bg-red-500 text-white hover:bg-red-600' 
-            : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-        }`}
+        className="w-full py-2 rounded text-sm font-medium transition-colors 'bg-gray-100 text-gray-700 hover:bg-gray-200"
       >
         {favorited ? '❤️ В избранном' : '🤍 В избранное'}
       </button>
