@@ -2,6 +2,8 @@ import { useState, useEffect} from 'react'
 import './App.css'
 import Header from './component/Header'
 import Main from './component/Main'
+import Loader from './component/Loader';
+import ErrorMessage from './component/ErrorMessage';
 
 
 
@@ -32,16 +34,8 @@ function App() {
   return (
     <>
       <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-      {isLoading && (
-        <div className="text-center py-20 text-gray-500 text-lg">
-          Заргузка...
-        </div>
-      )}
-      {error && (
-        <div className="max-w-6xl mx-auto px-5 py-10 text-center text-red-500 bg-red-50 rounded-lg border border-red-200 my-5">
-          Ошибка: {error}.
-        </div>
-      )}
+      {isLoading && <Loader/>}
+      {error && <ErrorMessage error={error}/>}
        {!isLoading && !error && (
         <Main items={trips} searchQuery={searchQuery} />
       )}

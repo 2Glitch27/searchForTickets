@@ -2,12 +2,12 @@ import React, { createContext, useState, useEffect, useContext } from 'react';
 const FavoritesContext = createContext();
 export function FavoritesProvider({ children }) {
 const [favorites, setFavorites] = useState(() => {
-    const saved = localStorage.getItem('favorites_ids');
+    const saved = localStorage.getItem('favorites_id');
     return saved ? JSON.parse(saved) : []; 
   });
 
   useEffect(() => {
-    localStorage.setItem('favorites_ids', JSON.stringify(favorites));
+    localStorage.setItem('favorites_id', JSON.stringify(favorites));
   }, [favorites]);
 
  
