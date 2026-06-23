@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useFavorites } from '../context/FavoritesContext';
+import SearchForm from './SearchForm';
 
 export default function Header({ searchQuery, setSearchQuery }) {
   const { favoriteCount } = useFavorites();
@@ -12,28 +14,21 @@ export default function Header({ searchQuery, setSearchQuery }) {
             <span className="text-blue-600">SearchForTickets</span>
           </div>
           <nav className="flex gap-5 font-medium text-gray-600 text-sm">
-            <a href="/" className="hover:text-blue-600 transition-colors">Главная</a>
-            <a href="/destinations" className="hover:text-blue-600 transition-colors">Направления</a>
+            <Link to="/" className="hover:text-blue-600 transition-colors">Главная</Link>
           </nav>
         </div>
         <div className="w-full sm:max-w-xs relative">
-          <input
-            type="text"
-            placeholder="Поиск"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full px-3 py-1.5 border border-gray-300 rounded bg-gray-50 focus:bg-white focus:outline-none text-sm transition-colors"
-          />
+          <SearchForm searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
         </div>
         <div className="w-full sm:w-auto flex justify-end">
-          <a href="/favorites" className="flex items-center gap-1.5 text-gray-700 hover:text-blue-600 transition-colors text-sm font-medium">
+          <Link to="/favorites" className="flex items-center gap-1.5 text-gray-700 hover:text-blue-600 transition-colors text-sm font-medium">
             <span>Избранное</span>
             {favoriteCount > 0 && (
               <span className="bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">
                 {favoriteCount}
               </span>
             )}
-          </a>
+          </Link>
         </div>
       </div>
     </header>
